@@ -15,7 +15,6 @@ var spotify = new Spotify({
 });
 
 
-//Input on CLI
 var query = process.argv;
 var type = process.argv[2];
 var array = [];
@@ -27,9 +26,9 @@ for (var i = 3; i < query.length; i++) {
 }
 
 array.splice(-1); //Get rid of last plus sign, if left errors caused
-var finalSearch = array.join(""); //Search query joined together to form string for any query below
+var completeSearch = array.join(""); //Search query joined together to form string for any query below
 
-//Switch statement to determine type selected. (Ex. concert-this, movie-this, etc.)
+//Switch statement to determine type selected
 switch (type) {
     case 'concert-this':
         concertMe()
@@ -51,12 +50,12 @@ switch (type) {
 // node liri.js concert-this
 
 function concertMe() {
-    if (finalSearch === "") {
+    if (completeSearch === "") {
         console.log('\n')
         console.log("No Artist entered. Please enter an Artist")
         console.log('\n')
     } else {
-        axios.get("https://rest.bandsintown.com/artists/" + finalSearch + "/events?app_id=codingbootcamp").then(
+        axios.get("https://rest.bandsintown.com/artists/" + completeSearch + "/events?app_id=codingbootcamp").then(
         function (response) {
            if(response.data.length <= 0) {
                console.log("No info for this Artist")
@@ -82,13 +81,13 @@ function concertMe() {
 
 function spotifyIt() {
 
-    if (finalSearch === "") {
-        finalSearch = "ace+of+base+the+sign"
+    if (completeSearch === "") {
+        completeSearch = "ace+of+base+the+sign"
     }
 
     spotify.search({
         type: 'artist,track',
-        query: finalSearch
+        query: completeSearch
     }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
@@ -111,11 +110,11 @@ function spotifyIt() {
 
 function movieThis() {
 
-    if (finalSearch === "") {
-        finalSearch = "mr+nobody"
+    if (completeSearch === "") {
+        completeSearch = "mr+nobody"
     }
 
-    axios.get("http://www.omdbapi.com/?t=" + finalSearch + "&y=&plot=short&apikey=trilogy").then(
+    axios.get("http://www.omdbapi.com/?t=" + completeSearch + "&y=&plot=short&apikey=trilogy").then(
         function (response) {
         
             var currData = `\n
@@ -147,7 +146,7 @@ function itSays() {
 
         var dataArr = data.split(",");
       
-        finalSearch = dataArr[1];
+        completeSearch = dataArr[1];
         spotifyIt()
       });
 }

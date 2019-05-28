@@ -24,3 +24,44 @@ concert-this Rolling Stones
     Location: Miami Gardens, MD
     Event Date: August 31, 2019
             
+concert-this Rolling Stones
+
+
+    Venue: Hard Rock Stadium
+    Location: Miami Gardens, MD
+    Event Date: August 31, 2019
+            
+spotify-this Beatles
+
+spotify-this-song Let it be
+
+
+    Artist: The Beatles
+    Track: Let It Be - Remastered 2009
+    Preview: null
+    Album: Let It Be (Remastered)
+            
+movie-this Braveheart
+
+
+    Title: Braveheart
+    Released: 1995
+    IMDB Rating: 8.4
+    Rotten Tomatos Rating: 77%
+    Country: USA, Ireland
+    Language: English, French, Latin, Scottish Gaelic, Italian
+    Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+    Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+            
+movie-this Braveheart
+
+
+    Title: Braveheart
+    Released: 1995
+    IMDB Rating: 8.4
+    Rotten Tomatos Rating: 77%
+    Country: USA, Ireland
+    Language: English, French, Latin, Scottish Gaelic, Italian
+    Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+    Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+            
