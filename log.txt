@@ -1,0 +1,26 @@
+
+concert-this fleetwood mac
+
+
+    Venue: Rogers Place
+    Location: Edmonton, 
+    Event Date: November 12, 2019
+            
+concert-this U2
+undefined
+concert-this Drake
+undefined
+concert-this Rolling Stones
+
+
+    Venue: Hard Rock Stadium
+    Location: Miami Gardens, MD
+    Event Date: August 31, 2019
+            
+concert-this Rolling Stones
+
+
+    Venue: Hard Rock Stadium
+    Location: Miami Gardens, MD
+    Event Date: August 31, 2019
+            
